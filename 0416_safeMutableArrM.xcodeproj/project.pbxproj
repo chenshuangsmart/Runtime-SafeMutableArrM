@@ -15,6 +15,7 @@
 		40494FE320847F4500F88A8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40494FE220847F4500F88A8B /* main.m */; };
 		40494FED20847F4500F88A8B /* _416_safeMutableArrMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40494FEC20847F4500F88A8B /* _416_safeMutableArrMTests.m */; };
 		40494FF820847F4500F88A8B /* _416_safeMutableArrMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40494FF720847F4500F88A8B /* _416_safeMutableArrMUITests.m */; };
+		4049500720847F5C00F88A8B /* NSMutableArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 4049500520847F5C00F88A8B /* NSMutableArray+SafeAccess.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		40494FF320847F4500F88A8B /* 0416_safeMutableArrMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 0416_safeMutableArrMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40494FF720847F4500F88A8B /* _416_safeMutableArrMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _416_safeMutableArrMUITests.m; sourceTree = "<group>"; };
 		40494FF920847F4500F88A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4049500520847F5C00F88A8B /* NSMutableArray+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SafeAccess.m"; sourceTree = "<group>"; };
+		4049500620847F5C00F88A8B /* NSMutableArray+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SafeAccess.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		40494FD220847F4500F88A8B /* 0416_safeMutableArrM */ = {
 			isa = PBXGroup;
 			children = (
+				4049500620847F5C00F88A8B /* NSMutableArray+SafeAccess.h */,
+				4049500520847F5C00F88A8B /* NSMutableArray+SafeAccess.m */,
 				40494FD320847F4500F88A8B /* AppDelegate.h */,
 				40494FD420847F4500F88A8B /* AppDelegate.m */,
 				40494FD620847F4500F88A8B /* ViewController.h */,
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4049500720847F5C00F88A8B /* NSMutableArray+SafeAccess.m in Sources */,
 				40494FD820847F4500F88A8B /* ViewController.m in Sources */,
 				40494FE320847F4500F88A8B /* main.m in Sources */,
 				40494FD520847F4500F88A8B /* AppDelegate.m in Sources */,
