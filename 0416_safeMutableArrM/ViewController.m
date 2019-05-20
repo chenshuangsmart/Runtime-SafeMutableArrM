@@ -27,8 +27,12 @@
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     for ( int i = 0; i < 1000; i ++) {
         dispatch_async(queue, ^{
-            NSLog(@"添加第%d个",i);
-            [safeArr addObject:[NSString stringWithFormat:@"%d",i]];
+            NSString *obj = [NSString stringWithFormat:@"%d",i];
+            if (i % 9 == 0) {
+                obj = nil;
+            }
+            NSLog(@"添加第%d个值%@",i,obj);
+            [safeArr addObject:obj];
         });
         
         dispatch_async(queue, ^{

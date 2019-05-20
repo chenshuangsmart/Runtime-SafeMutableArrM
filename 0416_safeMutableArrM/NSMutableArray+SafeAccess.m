@@ -27,7 +27,7 @@
     if (anObject) {
         [self safeAddObject:anObject];
     }else{
-        NSLog(@"obj is nil");
+        NSLog(@"add obj is nil");
     }
 }
 
@@ -36,13 +36,14 @@
     if(index<[self count]){
         return [self safeObjectAtIndex:index];
     }else{
-        NSLog(@"index is beyond bounds ");
+        NSLog(@"read index is beyond");
     }
     return nil;
 }
 
 - (void)safeRemoveObjectAtIndex:(NSUInteger)index {
     if (index >= [self count]) {
+        NSLog(@"remove object index is beyond");
         return;
     }
     
